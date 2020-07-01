@@ -19,6 +19,7 @@ tools {
             mvn clean build
             '''
          }
+      }
          stage('Package') {
          steps {
             echo 'This is the Package Part'
