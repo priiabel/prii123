@@ -14,7 +14,7 @@ tools {
          steps {
             echo 'This is the Build Part'
             sh '''
-            cd /var/lib/jenkins/workspace/testpipe/priiabel/testpipe
+            cd /var/lib/jenkins/workspace/testpipe/prii123/testpipe
 
             mvn clean package
             '''
