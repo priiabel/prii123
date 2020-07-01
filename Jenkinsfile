@@ -16,7 +16,16 @@ tools {
             sh '''
             cd /var/lib/jenkins/workspace/testpipe/prii123/testpipe
 
-            mvn clean package
+            mvn clean build
+            '''
+         }
+         stage('Package') {
+         steps {
+            echo 'This is the Package Part'
+            sh '''
+            cd /var/lib/jenkins/workspace/testpipe/prii123/testpipe
+
+            mvn package
             '''
          }
       }
