@@ -14,12 +14,7 @@ tools {
          steps {
             echo 'This is the Build Part'
             sh '''
-            cd /var/lib/jenkins/workspace/testpipe/priiabel
-            mvn archetype:generate
-   -DgroupId=com.kuldeeparya
-   -DartifactId=samplemvnwar
-   -DarchetypeArtifactId=maventemplate
-   -DinteractiveMode=false
+            cd /var/lib/jenkins/workspace/testpipe/priiabel/testpipe
 
             mvn clean package
             '''
